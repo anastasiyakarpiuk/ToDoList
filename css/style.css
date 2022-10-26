@@ -1,0 +1,130 @@
+body {
+  background-color: #F2F5F6;
+  font-family: 'Monda', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.todo_list {
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.todo_list__title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 78px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 43px;
+}
+
+.form {
+  text-align: center;
+}
+
+input[type=text] {
+  max-width: 742px;
+  padding: 6px 29px;
+  width: 100%;
+  background-color: #A8D2A5;
+  border: none;
+  margin:0 0 26px 0;
+  height: 41px;
+  font-family: 'Monda', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+input[type=text]::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3E3B3B;
+  opacity: 1;
+  font-family: 'Monda', sans-serif;
+}
+
+.actions {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+button.delete, 
+button.done {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.delete img,
+.done img {
+  pointer-events: none;
+}
+
+button.done {
+  margin-right: 5px;
+}
+
+button.add {
+  font-family: 'Monda', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #3E3B3B;
+  border-radius: 25px;
+  width: 290px;
+  margin-bottom: 25px;
+  padding: 16px 122px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #A8D2A5 0%, #ACD4E1 115.2%);
+  box-shadow: 0px 4px 4px #ACD4E1;
+  border: none;
+}
+
+.todo {
+  padding-left: 0;
+  position: relative;
+}
+
+.todo li {
+  position: relative;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.todo {
+  display: block;
+  margin: 0;
+}
+
+.todo__item {
+  border-bottom: 2px solid #3E3B3B;
+}
+
+.label_title {
+  padding-left: 25px;
+  position: relative;
+  font-size: 18px;
+  line-height: 29px;
+  margin: 5px;
+}
+
+p.label_title--done {
+  color: #C4C4C4;
+  text-decoration-line: line-through;
+}
